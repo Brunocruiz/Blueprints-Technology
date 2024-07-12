@@ -1,2 +1,227 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root{
+    --body-color: #0262C2;
+    --second-blue-color: #004080;
+    --text-color: #ffff;
+    --second-text-color: #0000;
+    --text-info: #e3e0e0;
+    --three-text-color: #bbbbbb;
+}
+
+/* ----- BASE ----- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ----- SMOOTH SCROLL ----- */
+html{
+    scroll-behavior: smooth;
+}
+
+/* ------- BODY -------- */
+body{
+    background-color: var(--body-color);
+}
+
+.container{
+    width: 100%;
+    position: relative;
+}
+
+/* NAVBAR */
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--second-blue-color);
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    padding-inline: 10vw;
+}
+
+.nav-logo{
+    position: relative;
+    top: -65px;
+}
+
+.nav-logo img{
+    width: 200px;
+    height: auto;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    position: relative;
+    top: 2px;
+    right: -250px;
+}
+
+.nav-link {
+    font-family: 'Opens Sans', sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    color: var(--text-color);
+    margin-inline: 15px;
+}
+
+.nav-language {
+    list-style: none;
+    position: relative;
+    background-color: var(--text-color);
+    width: 110px;
+    height: 35px;
+    top: 17px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-language {
+    width: 110px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+.nav-language a {
+    text-decoration: none;
+    color: var(--body-color);
+    font-size: 14px;
+    font-weight: 600;
+    position: relative;
+    top: -1px;
+}
+
+.nav-language a i {
+    text-decoration: none;
+    color: var(--body-color);
+    font-size: 25px;
+    top: 4px;
+}
+
+.nav-language i {
+    font-size: 22px;
+    position: relative;
+    color: var(--body-color);
+    top: 2px;
+    padding-right: 2px;
+}
+
+.nav-language .language2 {
+    display: none;
+}
+
+/*  SECTION HOME */
+.section-home {
+    display: flex;
+}
+
+.left-home {
+    width: 50%;
+    height: 680px;
+    display: block;
+    place-items: center; /* Centraliza horizontalmente e verticalmente */
+}
+
+.left-home h1 {
+    width: 660px;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 80px;
+    color: var(--text-color);
+    letter-spacing: 3px;
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+.left-home .paragrafo-home {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    color: var(--text-info);
+    width: 660px;
+    position: relative;
+    top: 105px;
+    left: 100px;
+}
+
+.left-home p:nth-of-type(2) {
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    width: 660px;
+    color: var(--text-color);
+    top: 200px;
+    left: 100px;
+}
+
+.left-home p:nth-of-type(3) {
+    position: relative;
+    font-size: 14px;
+    color: var(--text-color);
+    top: 215px;
+    left: 100px;
+}
+
+.left-home p:nth-of-type(3) a {
+    color: var(--text-color);
+}
+
+.div-email {
+    width: 600px;
+    height: 50px;
+    top: 210px;
+    left: 100px;
+    position: relative;
+    border-top-right-radius: 30px; /* Raio do canto superior direito */
+    border-bottom-right-radius: 30px;
+    display: flex;
+    background-color: var(--text-color);
+}
+
+.div-email input {
+    font-size: 16px;
+    font-weight: 500;
+    width: 380px;
+    position: relative;
+    border: none;
+    outline: none;
+    left: 15px;
+    color: var(--three-text-color);
+}
+
+.div-email div {
+    position: relative;
+    background-color: var(--body-color);
+    border-radius: 33px;
+    top: 5px;
+    left: 40px;
+    width: 170px;
+    height: 40px;
+}
+
+.div-email div a {
+    position: relative;
+    top: 7px;
+    left: 17px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.right-home {
+    width: 50%;
+    height: 650px;
+}
+
+.right-home img {
+    position: relative;
+    top: 20%;
+    left: 5%;
+}

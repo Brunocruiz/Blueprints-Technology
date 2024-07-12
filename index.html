@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- CSS -->
-     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="css/style.css">
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/solid.css">
 
     <!-- FAViCON -->
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
@@ -20,15 +24,56 @@
 <body>
     <!-- HEADER -->
     <header>
-        <nav>
+        <div class="container">
+            <nav id="header">
+                <div class="nav-logo">
+                    <img src="images/Blueprints Logo rmv_bk.png" alt="">
+                </div>
+                
+                <div class="nav-list">
+                    <li>
+                        <a href="#sistemas" class="nav-link active-link">Sistemas<i class="uis uis-angle-right"></i></a>
+                    </li>
 
-        </nav>
+                    <li>
+                        <a href="#serviços" class="nav-link active-link">Serviços</a>
+                    </li>
+
+                    <li>
+                        <a href="#preços" class="nav-link active-link">Preços</a>
+                    </li>
+
+                    <li>
+                        <a href="#faq" class="nav-link active-link">FAQ</a>
+                    </li>
+                </div>
+
+                <div class="nav-language">
+                    <li class="list-language">
+                        <i class="uil uil-globe"></i>
+                        <a href="#pt-br">PT-BR<i class="uis uis-angle-right"></i></a>
+                        <a href="#en-us" class="language2">EN-US</a>
+                    </li>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <!-- SECTION HOME -->
-     <section>
-        <div class="left-home"></div>
-        <div class="right-home"></div>
+     <section class="section-home">
+        <div class="left-home">
+            <h1>SISTEMAS QUE ATENDEM<br>TODO TIPO DE EMPRESA</h1>
+            <p class="paragrafo-home">Sistema de estoque, Sistema de agendamento, Gestão de Clínicas, Gestão Financeira e muito mais</p>
+            <p>Caso ainda não tenha um sistema em sua empresa, entre em contato.</p>
+            <div class="div-email">
+                <input type="email" id="email" name="email" placeholder="Digite seu email aqui" required>
+                <div><a href="">Entrar em contato</a></div>
+            </div>
+            <p>Ainda não conhece como funciona a Blueprints? <a href=""><b>Clique aqui</b></a></p>
+        </div>
+        <div class="right-home">
+            <img src="images/gestão de estoque_img (1).png" alt="">
+        </div>
      </section>
 
      <!-- SECTION INFO BLUEPRINTS -->
