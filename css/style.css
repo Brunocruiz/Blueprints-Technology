@@ -61,6 +61,11 @@ nav{
     right: -250px;
 }
 
+.nav-list i {
+    position: relative;
+    top: 2px;
+}
+
 .nav-link {
     font-family: 'Opens Sans', sans-serif;
     font-size: 15px;
@@ -124,7 +129,7 @@ nav{
 
 .left-home {
     width: 50%;
-    height: 680px;
+    height: 600px;
     display: block;
     place-items: center; /* Centraliza horizontalmente e verticalmente */
 }
@@ -132,7 +137,7 @@ nav{
 .left-home h1 {
     width: 660px;
     font-family: "Bebas Neue", sans-serif;
-    font-size: 80px;
+    font-size: 68px;
     color: var(--text-color);
     letter-spacing: 3px;
     position: relative;
@@ -142,7 +147,7 @@ nav{
 
 .left-home .paragrafo-home {
     font-family: "Poppins", sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     color: var(--text-info);
     width: 660px;
     position: relative;
@@ -151,7 +156,7 @@ nav{
 }
 
 .left-home p:nth-of-type(2) {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     position: relative;
     width: 660px;
@@ -174,7 +179,7 @@ nav{
 
 .div-email {
     width: 600px;
-    height: 50px;
+    height: 45px;
     top: 210px;
     left: 100px;
     position: relative;
@@ -185,7 +190,7 @@ nav{
 }
 
 .div-email input {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     width: 380px;
     position: relative;
@@ -195,33 +200,539 @@ nav{
     color: var(--three-text-color);
 }
 
-.div-email div {
+.div-email div button {
     position: relative;
-    background-color: var(--body-color);
-    border-radius: 33px;
-    top: 5px;
-    left: 40px;
     width: 170px;
     height: 40px;
-}
-
-.div-email div a {
-    position: relative;
-    top: 7px;
-    left: 17px;
+    top: 2px;
+    left: 45px;
+    background-color: var(--body-color);
+    border: none;
+    border-radius: 30px;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 500;
     color: var(--text-color);
 }
 
+.div-email div button:hover {
+    cursor: pointer;
+}
+
 .right-home {
     width: 50%;
-    height: 650px;
+    height: 600px;
 }
 
 .right-home img {
     position: relative;
     top: 20%;
     left: 5%;
+}
+
+
+/* <!-- SECTION INFO BLUEPRINTS --> */
+ .section-info {
+    width: 100%;
+    position: relative; /* Posicionamento relativo para o contêiner pai */
+    height: 700px; /* Define a altura da div-pai para 100% da altura da viewport */
+    background-color: var(--text-color);
+}
+
+.titulo-info {
+    position: absolute;
+    top: 20%;
+    left: 35%;
+}
+
+.titulo-info h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 62px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.titulo-info p {
+    position: relative;
+    left: -70px;
+}
+
+.div-feedback {
+    position: relative;
+    top: 45%;
+    left: 32%;
+    width: 550px;
+    height: 300px;
+    background-color: #ffff;
+    border: solid 2px #E0E0E0;
+    border-radius: 9px;
+    z-index: 100;
+}
+
+.div-feedback i {
+    position: relative;
+    font-size: 32px;
+    left: 12px;
+    color: #0262C2;
+    overflow: hidden;
+}
+
+.div-feedback p:nth-child(2) {
+    position: relative;
+    font-size: 18px;
+    width: 480px;
+    top: 15px;
+    left: 40px;
+}
+
+.div-feedback p:nth-child(3) {
+    position: relative;
+    width: 250px;
+    font-size: 16px;
+    top: 22%;
+    left: 65%;
+}
+
+.div-feedback p:nth-child(4) {
+    position: relative;
+    width: 250px;
+    font-size: 16px;
+    top: 25%;
+    left: 40%;
+}
+
+.circle-img {
+    position: relative;
+    top: 2%;
+    left: 82%;
+    width: 75px;
+    height: 75px;
+    background-color: var(--second-blue-color);
+    border-radius: 50%;
+}
+
+.circle {
+    position: relative;
+    top: -80%;
+    left: 25%;
+    width: 160px;
+    height: 160px;
+    background-color: var(--body-color);
+    border-radius: 50%;
+    filter: blur(5px); 
+}
+
+.circle2 {
+    position: relative;
+    top: -125%;
+    left: 75%;
+    width: 160px;
+    height: 160px;
+    background-color: var(--body-color);
+    border-radius: 50%;
+    filter: blur(4px); 
+}
+
+.circle3 {
+    position: relative;
+    top: -115%;
+    left: 60%;
+    width: 260px;
+    height: 260px;
+    background-color: var(--body-color);
+    border-radius: 50%;
+    filter: blur(3px);
+}
+
+.amount {
+    position: relative;
+    top: 1%;
+    left: 33%;
+    width: 550px;
+    height: 300px;
+    background-color: #F3F9FF;
+    border: solid 2px #E0E0E0;
+    border-radius: 9px;
+    z-index: 99;
+}
+
+.amount2 {
+    position: relative;
+    top: -43%;
+    left: 34%;
+    width: 550px;
+    height: 300px;
+    background-color: #F3F9FF;
+    border: solid 2px #E0E0E0;
+    border-radius: 9px;
+    z-index: 98;
+}
+
+.amount button {
+    position: relative;
+    top: 75%;
+    left: -15%;
+    width: 40px;
+    height: 50px;
+    border: none;
+    background-color: var(--text-color);
+    z-index: 100;
+}
+
+.amount button:hover {
+    cursor: pointer;
+}
+
+.amount2 button {
+    position: relative;
+    top: 78%;
+    left: 104%;
+    width: 40px;
+    height: 50px;
+    border: none;
+    z-index: 100;
+    background-color: var(--body-color);
+}
+
+.amount2 button:hover {
+    cursor: pointer;
+}
+
+.amount button i {
+    color: var(--body-color);
+    font-size: 44px;
+}
+
+.amount2 button i {
+    color: var(--text-color);
+    font-size: 44px;
+}
+
+.icone {
+    position: absolute;
+    font-size: 2rem;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.icone1 {
+    top: -125px;
+    left: -280px;
+    animation: float1 12s infinite;
+}
+
+.icone1 i {
+    font-size: 72px;
+}
+
+.icone2 {
+    bottom: -25px;
+    left: -325px;
+    animation: float2 15s infinite;
+}
+
+.icone2 i {
+    font-size: 72px;
+}
+
+.icone3 {
+    bottom: 25px;
+    right: -325px;
+    animation: float3 13s infinite;
+}
+
+.icone3 i {
+    font-size: 72px;
+}
+
+/* ANIMAÇÃO ICONES INFO SECTION */
+@keyframes float1 {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(50px, 50px); }
+    50% { transform: translate(100px, 0); }
+    75% { transform: translate(50px, -50px); }
+    100% { transform: translate(0, 0); }
+}
+
+@keyframes float2 {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(-60px, 30px); }
+    50% { transform: translate(-50px, 0); }
+    75% { transform: translate(-50px, -20px); }
+    100% { transform: translate(0, 0); }
+}
+
+@keyframes float3 {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(-70px, -30px); }
+    50% { transform: translate(-90px, 0); }
+    75% { transform: translate(-50px, 50px); }
+    100% { transform: translate(0, 0); }
+}
+
+
+/* <!-- SECTION OUTDOOR COMPANIES --> */
+.section-outdoor {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 7vw;
+    width: 100%;
+    height: 150px;
+    background-color: var(--text-color);
+}
+
+.section-outdoor .logo1 img{
+    position: relative;
+    top: 80px;
+    width: 120px;
+    height: auto;
+}
+
+.section-outdoor .logo2 img{
+    position: relative;
+    top: 80px;
+    width: 120px;
+    height: auto;
+}
+
+.section-outdoor .logo3 img{
+    position: relative;
+    top: 80px;
+    width: 85px;
+    height: auto;
+}
+
+.section-outdoor .logo4 img{
+    position: relative;
+    top: 80px;
+    width: 200px;
+    height: auto;
+}
+
+.section-outdoor .logo5 img{
+    position: relative;
+    top: 80px;
+    width: 120px;
+    height: auto;
+}
+
+
+/* <!-- SECTION SLIDER BLUEPRINTS --> */
+.section-slides {
+    width: 100%;
+    height: 710px;
+    background-color: var(--body-color);
+}
+
+.section-slides div {
+    position: relative;
+    width: 800px;
+    top: 60px;
+    left: 380px;
+}
+
+.section-slides div img {
+    width: 700px;
+    height: auto;
+}
+
+.div-button1 button {
+    position: relative;
+    top: -300px;
+    left: -130px;
+    width: 30px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+}
+
+.div-button2 button{
+    position: relative;
+    top: -377px;
+    left: 740px;
+    width: 30px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+}
+.section-slides div button i {
+    font-size: 62px;
+    color: var(--text-color);
+}
+
+
+/* <!-- FOOTER --> */
+footer {
+    position: relative;
+    width: 100%;
+    background-color: var(--second-blue-color);
+}
+
+footer p, footer a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.div-footer {
+    height: 330px;
+    justify-content: space-between;
+    padding-inline: 5vw;
+}
+
+.div-footer img {
+    position: relative;
+    width: 200px;
+    height: auto;
+    left: 100px;
+}
+
+.div-footer .div-produtos,
+.div-footer .div-conteudo,
+.div-footer .div-atendimento,
+.div-footer .div-institucional {
+    width: 200px;
+    height: auto;
+}
+
+.div-footer .div-produtos {
+    position: relative;
+    top: -150px;
+    left: 450px;
+}
+
+.div-footer .div-produtos p {
+    width: 80px;
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+
+.div-footer .div-produtos a {
+    display: block;
+    width: 170px;
+    padding-bottom: 5px;
+    color: var(--three-text-color);
+    font-size: 14px;
+}
+
+.div-footer .div-conteudo {
+    position: relative;
+    top: -232px;
+    left: 650px;
+}
+
+.div-footer .div-conteudo p {
+    width: 100px;
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+
+.div-footer .div-conteudo a {
+    display: block;
+    width: 170px;
+    padding-bottom: 5px;
+    color: var(--three-text-color);
+    font-size: 14px;
+}
+
+.div-footer .div-atendimento {
+    position: relative;
+    top: -312px;
+    left: 850px;
+}
+
+.div-footer .div-atendimento p {
+    width: 100px;
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+
+.div-footer .div-atendimento a {
+    display: block;
+    width: 170px;
+    padding-bottom: 5px;
+    color: var(--three-text-color);
+    font-size: 14px;
+}
+
+.div-footer .div-institucional {
+    position: relative;
+    top: -394px;
+    left: 1050px;
+}
+
+.div-footer .div-institucional p {
+    width: 100px;
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+
+.div-footer .div-institucional a {
+    display: block;
+    width: 170px;
+    padding-bottom: 5px;
+    color: var(--three-text-color);
+    font-size: 14px;
+}
+
+.div-footer .div-produtos a:hover,
+.div-footer .div-conteudo a:hover,
+.div-footer .div-atendimento a:hover,
+.div-footer .div-institucional a:hover {
+    color: var(--text-color);
+}
+
+
+.div-footer .redes-sociais {
+    position: relative;
+    width: 150px;
+    top: -300px;
+    left: 150px;
+}
+
+.div-footer .redes-sociais p {
+    font-size: 16px;
+}
+
+.div-footer .redes-sociais a {
+        position: relative;
+        left: -45px;
+        padding-left: 15px;
+}
+
+.div-footer .redes-sociais a i{
+    font-size: 32px;
+}
+
+.div-termos {
+    position: relative;
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-termos p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+    border-top: 2px solid #ffff;
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+.div-termos a {
+    display: flex;
+    width: 370px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2px;
+    margin: 0 auto;
+    font-size: 15px;
+}
+
+.div-termos a:hover {
+    color: var(--three-text-color);
 }
