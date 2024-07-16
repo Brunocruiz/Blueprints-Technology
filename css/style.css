@@ -40,6 +40,8 @@ nav {
     height: 70px;
     line-height: 70px;
     padding-inline: 8vw;
+    background-color: #0259b0;
+    box-shadow: 1 2px 4px rgba(0, 0, 0, 0.11);;
 }
 
 .nav-logo{
@@ -88,23 +90,22 @@ nav {
 }
 
 .left-home h1 {
-    width: 660px;
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 68px;
-    color: var(--text-color);
-    letter-spacing: 3px;
-    position: relative;
     top: 100px;
     left: 12%;
+    width: 660px;
+    font-size: 52px;
+    color: var(--text-color);
+    text-shadow: 0 5px 8px rgba(0, 0, 0, 0.11);
+    line-height: 1.1; /* Ajusta o espaçamento entre linhas */
+    position: relative;
 }
 
 .left-home .paragrafo-home {
-    font-family: "Poppins", sans-serif;
     position: relative;
     top: 105px;
-    left: 12%;
+    left: 13%;
     font-size: 16px;
-    color: var(--text-info);
+    color: var(--text-color);
     width: 590px;
 }
 
@@ -179,8 +180,9 @@ nav {
 
 .right-home img {
     position: relative;
-    top: 20%;
-    left: 5%;
+    left: 15%;
+    width: 500px;
+    height: auto;
 }
 
 
@@ -220,6 +222,11 @@ nav {
     border: solid 2px #E0E0E0;
     border-radius: 9px;
     z-index: 100;
+    display: none; /* Esconde todos os feedbacks inicialmente */
+}
+
+.div-feedback.current-feedback {
+    display: block; /* Exibe apenas o feedback atual */
 }
 
 .div-feedback i {
@@ -234,19 +241,52 @@ nav {
     position: relative;
     font-size: 18px;
     width: 480px;
+    height: 110px;
     top: 15px;
     left: 40px;
 }
 
-.div-feedback p:nth-child(3) {
+.div-feedback .feedback1 {
     position: relative;
-    width: 250px;
+    width: 150px;
     font-size: 16px;
     top: 22%;
     left: 65%;
 }
 
-.div-feedback p:nth-child(4) {
+.div-feedback .feedback2 {
+    position: relative;
+    width: 150px;
+    font-size: 16px;
+    top: 22%;
+    left: 58%;
+}
+
+.div-feedback .feedback3 {
+    position: relative;
+    width: 150px;
+    font-size: 16px;
+    top: 22%;
+    left: 58%;
+}
+
+.div-feedback .empresa1 {
+    position: relative;
+    width: 250px;
+    font-size: 16px;
+    top: 25%;
+    left: 40%;
+}
+
+.div-feedback .empresa2 {
+    position: relative;
+    width: 250px;
+    font-size: 16px;
+    top: 25%;
+    left: 53%;
+}
+
+.div-feedback .empresa3 {
     position: relative;
     width: 250px;
     font-size: 16px;
@@ -363,14 +403,15 @@ nav {
 
 .icone {
     position: absolute;
+    color: var(--body-color);
     font-size: 2rem;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
 }
 
 .icone1 {
-    top: -125px;
-    left: -280px;
+    top: 125px;
+    left: 180px;
     animation: float1 12s infinite;
 }
 
@@ -379,8 +420,8 @@ nav {
 }
 
 .icone2 {
-    bottom: -25px;
-    left: -325px;
+    bottom: 55px;
+    left: 325px;
     animation: float2 15s infinite;
 }
 
@@ -390,13 +431,15 @@ nav {
 
 .icone3 {
     bottom: 25px;
-    right: -325px;
+    right: 105px;
     animation: float3 13s infinite;
 }
 
 .icone3 i {
     font-size: 72px;
 }
+
+
 
 /* ANIMAÇÃO ICONES INFO SECTION */
 @keyframes float1 {
@@ -425,50 +468,56 @@ nav {
 
 
 /* <!-- SECTION OUTDOOR COMPANIES --> */
-.section-outdoor {
-    display: flex;
-    justify-content: space-between;
-    padding-inline: 7vw;
-    width: 100%;
-    height: 150px;
-    background-color: var(--text-color);
-}
-
-.section-outdoor .logo1 img{
+.logos {
+    overflow: hidden;
+    padding: 30px 0;
+    background: var(--text-color);
+    white-space: nowrap;
     position: relative;
-    top: 80px;
-    width: 120px;
-    height: auto;
+}
+  
+.logos:before,
+.logos:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+  
+.logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+  
+.logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+  
+.logos:hover .logos-slide {
+    animation-play-state: paused;
+}
+  
+.logos-slide {
+    display: inline-block;
+    animation: 35s slide infinite linear;
+}
+  
+.logos-slide img {
+    height: 50px;
+    margin: 0 40px;
 }
 
-.section-outdoor .logo2 img{
-    position: relative;
-    top: 80px;
-    width: 120px;
-    height: auto;
-}
-
-.section-outdoor .logo3 img{
-    position: relative;
-    top: 80px;
-    width: 85px;
-    height: auto;
-}
-
-.section-outdoor .logo4 img{
-    position: relative;
-    top: 80px;
-    width: 200px;
-    height: auto;
-}
-
-.section-outdoor .logo5 img{
-    position: relative;
-    top: 80px;
-    width: 120px;
-    height: auto;
-}
-
+@keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
 
 /* <!-- SECTION SLIDER BLUEPRINTS --> */
 .section-slides {
