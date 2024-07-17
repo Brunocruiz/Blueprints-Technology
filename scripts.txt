@@ -1,0 +1,322 @@
+// CONFIGURAÇÃO PÁGINA FEEDBACKS
+
+<section class="section-info">
+        <div class="titulo-info">
+            <h1>CONHEÇA A BLUEPRINTS</h1>
+            <p>Empresa focada na <b>organização e crescimento</b> do seu empreendimento.</p>
+        </div>
+
+        <div class="div-feedback current-feedback">
+            <i class="uil uil-smile"></i>
+            <p>Utilizar o sistema de gestão da Blueprints foi o que fez a qualidade do minha empresa subir, agora conseguimos aumentar rendimento em outros setores.</p>
+            <p class="feedback1">Luiz Otávio</p>
+            <p class="empresa1"><b>Representante | Tech Inovis</b></p>
+            <div class="circle-img"><img src="" alt=""></div>
+        </div>
+
+        <div class="div-feedback">
+            <i class="uil uil-smile-beam"></i>
+            <p>O impulso que obtive na gestão da minha empresa foi gigantesco, nunca imaginei que chegariamos a esse patamar.</p>
+            <p class="feedback2">Vinicius Santos</p>
+            <p class="empresa2"><b>RH | Metal Na Hora</b></p>
+            <div class="circle-img"><img src="" alt=""></div>
+        </div>
+
+        <div class="div-feedback">
+            <i class="uil uil-grin"></i>
+            <p>Sou imensamente grato pela facilidade que meus clientes têm ao agendar horários na minha barbearia.</p>
+            <p class="feedback3">Lucas Amorim</p>
+            <p class="empresa3"><b>Empresário | Lucas Barber</b></p>
+            <div class="circle-img"><img src="" alt=""></div>
+        </div>
+
+    <div class="amount"><button><i class="uil uil-arrow-circle-left prev-button"></i></button></div>
+    <div class="amount2"><button><i class="uil uil-arrow-circle-right next-button"></i></button></div>
+
+    <div class="icone icone1"><i class="uil uil-chart-pie"></i></div>
+    <div class="icone icone2"><i class="uil uil-store"></i></div>
+    <div class="icone icone3"><i class="uil uil-stopwatch-slash"></i></div>
+    <div class="circle"></div>
+    <div class="circle2"></div>
+    <div class="circle3"></div>
+</section>
+
+/* <!-- SECTION INFO BLUEPRINTS --> */
+ .section-info {
+    width: 100%;
+    position: relative; /* Posicionamento relativo para o contêiner pai */
+    height: 700px; /* Define a altura da div-pai para 100% da altura da viewport */
+    background-color: var(--text-color);
+}
+
+.titulo-info {
+    position: absolute;
+    top: 15%;
+    left: 35%;
+}
+
+.titulo-info h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 62px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.titulo-info p {
+    position: relative;
+    left: -70px;
+}
+
+.div-feedback {
+    position: relative;
+    top: 35%;
+    left: 32%;
+    width: 550px;
+    height: 300px;
+    background-color: #ffff;
+    border: solid 2px #E0E0E0;
+    border-radius: 9px;
+    z-index: 100;
+    display: none; /* Esconde todos os feedbacks inicialmente */
+}
+
+.div-feedback.current-feedback {
+    display: block; /* Exibe apenas o feedback atual */
+}
+
+.div-feedback i {
+    position: relative;
+    font-size: 32px;
+    left: 12px;
+    color: #0262C2;
+    overflow: hidden;
+}
+
+.div-feedback p:nth-child(2) {
+    position: relative;
+    font-size: 18px;
+    width: 480px;
+    height: 110px;
+    top: 15px;
+    left: 40px;
+}
+
+.div-feedback .feedback1 {
+    position: relative;
+    width: 150px;
+    font-size: 16px;
+    top: 22%;
+    left: 65%;
+}
+
+.div-feedback .feedback2 {
+    position: relative;
+    width: 150px;
+    font-size: 16px;
+    top: 22%;
+    left: 58%;
+}
+
+.div-feedback .feedback3 {
+    position: relative;
+    width: 150px;
+    font-size: 16px;
+    top: 22%;
+    left: 58%;
+}
+
+.div-feedback .empresa1 {
+    position: relative;
+    width: 250px;
+    font-size: 16px;
+    top: 25%;
+    left: 40%;
+}
+
+.div-feedback .empresa2 {
+    position: relative;
+    width: 250px;
+    font-size: 16px;
+    top: 25%;
+    left: 53%;
+}
+
+.div-feedback .empresa3 {
+    position: relative;
+    width: 250px;
+    font-size: 16px;
+    top: 25%;
+    left: 40%;
+}
+
+.circle-img {
+    position: relative;
+    top: 2%;
+    left: 82%;
+    width: 75px;
+    height: 75px;
+    background-color: var(--second-blue-color);
+    border-radius: 50%;
+}
+
+.circle {
+    position: relative;
+    top: -90%;
+    left: 25%;
+    width: 160px;
+    height: 160px;
+    background-color: var(--body-color);
+    border-radius: 50%;
+    filter: blur(5px); 
+}
+
+.circle2 {
+    position: relative;
+    top: -125%;
+    left: 75%;
+    width: 160px;
+    height: 160px;
+    background-color: var(--body-color);
+    border-radius: 50%;
+    filter: blur(4px); 
+}
+
+.circle3 {
+    position: relative;
+    top: -115%;
+    left: 60%;
+    width: 260px;
+    height: 260px;
+    background-color: var(--body-color);
+    border-radius: 50%;
+    filter: blur(3px);
+}
+
+.amount {
+    position: relative;
+    top: -5%;
+    left: 33%;
+    width: 550px;
+    height: 300px;
+    background-color: #F3F9FF;
+    border: solid 2px #E0E0E0;
+    border-radius: 9px;
+    z-index: 99;
+}
+
+.amount2 {
+    position: relative;
+    top: -46%;
+    left: 34%;
+    width: 550px;
+    height: 300px;
+    background-color: #F3F9FF;
+    border: solid 2px #E0E0E0;
+    border-radius: 9px;
+    z-index: 98;
+}
+
+.amount button {
+    position: relative;
+    top: 75%;
+    left: -15%;
+    width: 40px;
+    height: 50px;
+    border: none;
+    background-color: var(--text-color);
+    z-index: 100;
+}
+
+.amount button:hover {
+    cursor: pointer;
+}
+
+.amount2 button {
+    position: relative;
+    top: 78%;
+    left: 104%;
+    width: 40px;
+    height: 50px;
+    border: none;
+    z-index: 100;
+    background-color: var(--body-color);
+}
+
+.amount2 button:hover {
+    cursor: pointer;
+}
+
+.amount button i {
+    color: var(--body-color);
+    font-size: 44px;
+}
+
+.amount2 button i {
+    color: var(--text-color);
+    font-size: 44px;
+}
+
+.icone {
+    position: absolute;
+    color: var(--body-color);
+    font-size: 2rem;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.icone1 {
+    top: 125px;
+    left: 180px;
+    animation: float1 12s infinite;
+}
+
+.icone1 i {
+    font-size: 72px;
+}
+
+.icone2 {
+    bottom: 105px;
+    left: 325px;
+    animation: float2 15s infinite;
+}
+
+.icone2 i {
+    font-size: 72px;
+}
+
+.icone3 {
+    bottom: 95px;
+    right: 105px;
+    animation: float3 13s infinite;
+}
+
+.icone3 i {
+    font-size: 72px;
+}
+
+
+
+/* ANIMAÇÃO ICONES INFO SECTION */
+@keyframes float1 {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(50px, 50px); }
+    50% { transform: translate(100px, 0); }
+    75% { transform: translate(50px, -50px); }
+    100% { transform: translate(0, 0); }
+}
+
+@keyframes float2 {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(-60px, 30px); }
+    50% { transform: translate(-50px, 0); }
+    75% { transform: translate(-50px, -20px); }
+    100% { transform: translate(0, 0); }
+}
+
+@keyframes float3 {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(-70px, -30px); }
+    50% { transform: translate(-90px, 0); }
+    75% { transform: translate(-50px, 50px); }
+    100% { transform: translate(0, 0); }
+}
