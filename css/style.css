@@ -498,7 +498,7 @@ nav {
     position: relative;
     display: flex;
     width: 100%;
-    height: 700px;
+    height: 650px;
     overflow: hidden;
 }
 
@@ -552,6 +552,7 @@ nav {
 
 .div-produtividade button:hover {
     background-color: var(--second-text-color);
+    cursor: pointer;
 }
 
 .div-produtividade h2:nth-child(1) {
