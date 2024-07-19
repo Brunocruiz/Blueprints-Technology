@@ -182,9 +182,9 @@ nav {
 }
 
 .right-home img {
-    position: relative;
-    left: 15%;
-    width: 500px;
+    position: absolute;
+    right: 3%;
+    width: 650px;
     height: auto;
 }
 
