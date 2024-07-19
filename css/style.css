@@ -45,7 +45,7 @@ nav {
 }
 
 .nav-logo{
-    position: relative;
+    position: absolute;
     top: -65px;
 }
 
@@ -57,7 +57,7 @@ nav {
 .nav-list {
     display: flex;
     list-style: none;
-    position: relative;
+    position: absolute;
     right: 2%;
 }
 
@@ -619,7 +619,7 @@ nav {
 
 /* <!-- FOOTER --> */
 footer {
-    position: relative;
+    position: absolute;
     width: 100%;
     background-color: var(--second-blue-color);
 }
