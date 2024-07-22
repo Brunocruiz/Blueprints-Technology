@@ -114,9 +114,9 @@ nav {
 .div-sobre01 {
     position: absolute;
     border-top: 3px solid #D4D4D4;
-    width: 1200px;
+    width: 900px;
     height: 250px;
-    left: 150px;
+    left: 325px;
 }
 
 .div-sobre01 h4,
@@ -133,140 +133,140 @@ nav {
 .div-sobre04 p {
     position: absolute;
     top: 50px;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .div-sobre02 {
     position: absolute;
     border-top: 3px solid #D4D4D4;
-    width: 1200px;
+    width: 900px;
     height: 250px;
+    left: 325px;
     top: 150px;
-    left: 150px;
 }
 
 .div-sobre02 p:nth-child(2) {
     position: absolute;
     top: 52px;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .div-sobre02 p:nth-child(3) {
     position: absolute;
-    top: 90px;
-    font-size: 14px;
+    top: 100px;
+    font-size: 13px;
 }
 
 .div-sobre02 p:nth-child(4) {
     position: absolute;
-    top: 90px;
+    top: 100px;
     left: 180px;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .div-sobre02 p:nth-child(5) {
     position: absolute;
-    top: 150px;
-    font-size: 14px;
+    top: 160px;
+    font-size: 13px;
 }
 
 .div-sobre02 p:nth-child(6) {
     position: absolute;
-    top: 150px;
+    top: 160px;
     left: 190px;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .div-sobre03 {
     position: absolute;
     border-top: 3px solid #D4D4D4;
-    width: 1200px;
-    height: 250px;
     top: 400px;
-    left: 150px;
+    width: 900px;
+    height: 250px;
+    left: 325px;
 }
 
 .div-sobre03 p:nth-child(2) {
     position: absolute;
-    top: 55px;
-    font-size: 14px;
+    top: 65px;
+    font-size: 13px;
 }
 
 .div-sobre03 p:nth-child(3) {
     position: absolute;
-    top: 55px;
+    top: 65px;
     left: 200px;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .div-sobre03 p:nth-child(4) {
     position: absolute;
-    top: 100px;
-    font-size: 14px;
+    top: 125px;
+    font-size: 13px;
 }
 
 .div-sobre03 p:nth-child(5) {
     position: absolute;
-    top: 100px;
+    top: 125px;
     left: 150px;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .div-sobre03 p:nth-child(6) {
     position: absolute;
-    top: 150px;
-    font-size: 14px;
+    top: 175px;
+    font-size: 13px;;
 }
 
 .div-sobre03 p:nth-child(7) {
     position: absolute;
-    top: 150px;
+    top: 175px;
     left: 175px;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .div-sobre03 p:nth-child(8) {
     position: absolute;
-    top: 200px;
-    font-size: 14px;
+    top: 250px;
+    font-size: 13px;
 }
 
 .div-sobre03 p:nth-child(9) {
     position: absolute;
-    top: 200px;
+    top: 250px;
     left: 210px;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .div-sobre04 {
     position: absolute;
     border-top: 3px solid #D4D4D4;
-    width: 1200px;
-    height: 150px;
-    top: 700px;
-    left: 150px;
+    top: 725px;
+    width: 900px;
+    height: 250px;
+    left: 325px;
 }
 
 .div-sobre05 {
     position: absolute;
     border-top: 3px solid #D4D4D4;
-    width: 600px;
+    width: 500px;
     height: 250px;
-    top: 850px;
-    left: 150px;
+    top: 900px;
+    left: 325px;
 }
 
 .div-sobre05 p:nth-child(2) {
     position: absolute;
     top: 50px;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .div-sobre05 a {
     position: absolute;
     color: var(--second-text-color);
     top: 120px;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .div-sobre05 a i {
@@ -280,22 +280,23 @@ nav {
     padding: 22px 22px 22px 22px;
     border-radius: 12px;
     background-color: var(--body-color);
-    top: 850px;
-    height: 200px;
+    top: 900px;
+    height: 225px;
     left: 850px;
-    width: 450px;
+    width: 375px;
 }
 
 .div-curiosidade h3 {
     position: absolute;
     font-size: 22px;
-    left: 150px;
+    left: 115px;
 }
 
 .div-curiosidade p {
     position: relative;
-    font-size: 14px;
+    font-size: 13px;
     top: 45px;
+    left: 5px;
 }
 
 
