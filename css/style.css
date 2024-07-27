@@ -14,7 +14,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 /* ------- BODY -------- */
@@ -58,12 +58,10 @@ nav {
     display: flex;
     list-style: none;
     position: absolute;
-    right: 2%;
+    right: 3%;
 }
 
 .nav-list li {
-    font-family: 'Opens Sans', sans-serif;
-    font-size: 15px;
     text-decoration: none;
     color: var(--text-color);
     margin-left: 17px;
@@ -71,8 +69,8 @@ nav {
 }
 
 .nav-link {
-    font-family: 'Opens Sans', sans-serif;
-    font-size: 15px;
+    font-size: 14px;
+    font-weight: 500;
     text-decoration: none;
     color: var(--text-color);
 }
@@ -85,61 +83,59 @@ nav {
 
 .left-home {
     width: 50%;
-    height: 600px;
+    height: 650px;
     display: block;
     place-items: center;
 }
 
+.left-home img {
+    position: absolute;
+    top: 30%;
+    left: 22%;
+    width: 500px;
+    height: auto;
+}
+
+.left-home .line-home {
+    position: absolute;
+    top: 400px;
+    left: 50%;
+    background-color: var(--text-color);
+    transform: rotate(90deg);
+    border-radius: 20px;
+    width: 250px;
+    height: 2px;
+    z-index: 101;
+}
+
 .left-home h1 {
-    top: 100px;
-    left: 12%;
-    width: 660px;
-    font-size: 52px;
+    top: 70px;
+    left: 340px;
+    width: 900px;
+    font-size: 36px;
     color: var(--text-color);
     text-shadow: 0 5px 8px rgba(0, 0, 0, 0.11);
     line-height: 1.1;
     position: relative;
 }
 
-.left-home .paragrafo-home {
-    position: relative;
-    top: 105px;
-    left: 13%;
-    font-size: 16px;
-    color: var(--text-color);
-    width: 590px;
-}
-
-.left-home p:nth-of-type(2) {
+.left-home p{
     font-size: 14px;
     font-weight: 600;
     position: relative;
     width: 660px;
     color: var(--text-color);
-    top: 200px;
-    left: 12%;
-}
-
-.left-home p:nth-of-type(3) {
-    position: relative;
-    font-size: 14px;
-    color: var(--text-color);
-    top: 215px;
-    left: 12%;
-}
-
-.left-home p:nth-of-type(3) a {
-    color: var(--text-color);
+    top: 485px;
+    left: 495px;
 }
 
 .div-email {
     width: 600px;
     height: 45px;
-    top: 210px;
-    left: 12%;
+    top: 500px;
+    left: 455px;
     position: relative;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
+    border-radius: 33px;
     display: flex;
     background-color: var(--text-color);
 }
@@ -150,6 +146,7 @@ nav {
     width: 380px;
     position: relative;
     border: none;
+    border-radius: 33px;
     outline: none;
     left: 15px;
     color: var(--three-text-color);
@@ -181,12 +178,41 @@ nav {
     height: 600px;
 }
 
-.right-home img {
-    position: absolute;
-    top: 25%;
-    right: 10%;
-    width: 500px;
-    height: auto;
+.qualidades-home {
+    position: relative;
+    top: 205px;
+    left: 150px;
+    width: 450px;
+    height: 250px;
+}
+
+.qualidades-home ul {
+    position: relative;
+    list-style: none;
+}
+
+.qualidades-home ul li {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.qualidades-home ul li span {
+    color: var(--text-color);
+    font-size: 18px;
+}
+
+.qualidades-home ul li span i {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: #deeffe; 
+    border-radius: 50%;
+    color: var(--body-color);
+    font-size: 22px;
+    text-align: center;
 }
 
 /* <!-- SECTION OUTDOOR COMPANIES --> */
