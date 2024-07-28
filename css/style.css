@@ -199,6 +199,7 @@ nav {
 .qualidades-home ul li span {
     color: var(--text-color);
     font-size: 18px;
+    font-weight: 300;
 }
 
 .qualidades-home ul li span i {
