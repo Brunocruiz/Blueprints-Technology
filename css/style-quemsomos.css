@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
 :root{
     --body-color: #0262C2;
@@ -14,7 +14,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 /* ------- BODY -------- */
@@ -58,12 +58,10 @@ nav {
     display: flex;
     list-style: none;
     position: absolute;
-    right: 2%;
+    right: 3%;
 }
 
 .nav-list li {
-    font-family: 'Opens Sans', sans-serif;
-    font-size: 15px;
     text-decoration: none;
     color: var(--text-color);
     margin-left: 17px;
@@ -71,12 +69,11 @@ nav {
 }
 
 .nav-link {
-    font-family: 'Opens Sans', sans-serif;
-    font-size: 15px;
+    font-size: 14px;
+    font-weight: 500;
     text-decoration: none;
     color: var(--text-color);
 }
-
 /* <!-- SECTION SOBRE A BLUEPRINTS --> */
 .section-blueprints {
     position: relative;
@@ -108,7 +105,7 @@ nav {
     position: relative;
     background-color: var(--text-color);
     width: 100%;
-    height: 1200px;
+    height: 1100px;
 }
 
 .div-sobre01 {
@@ -132,6 +129,7 @@ nav {
 .div-sobre01 p,
 .div-sobre04 p {
     position: absolute;
+    text-align: justify;
     top: 50px;
     font-size: 13px;
 }
@@ -159,8 +157,9 @@ nav {
 
 .div-sobre02 p:nth-child(4) {
     position: absolute;
+    text-align: justify;
     top: 100px;
-    left: 180px;
+    left: 175px;
     font-size: 13px;
 }
 
@@ -172,8 +171,9 @@ nav {
 
 .div-sobre02 p:nth-child(6) {
     position: absolute;
+    text-align: justify;
     top: 160px;
-    left: 190px;
+    left: 175px;
     font-size: 13px;
 }
 
@@ -194,6 +194,7 @@ nav {
 
 .div-sobre03 p:nth-child(3) {
     position: absolute;
+    text-align: justify;
     top: 65px;
     left: 200px;
     font-size: 13px;
@@ -201,47 +202,51 @@ nav {
 
 .div-sobre03 p:nth-child(4) {
     position: absolute;
-    top: 125px;
+    top: 115px;
     font-size: 13px;
 }
 
 .div-sobre03 p:nth-child(5) {
     position: absolute;
-    top: 125px;
-    left: 150px;
+    text-align: justify;
+    top: 115px;
+    left: 200px;
     font-size: 13px;
 }
 
 .div-sobre03 p:nth-child(6) {
     position: absolute;
-    top: 175px;
+    top: 165px;
     font-size: 13px;;
 }
 
 .div-sobre03 p:nth-child(7) {
     position: absolute;
-    top: 175px;
-    left: 175px;
+    text-align: justify;
+    top: 165px;
+    left: 200px;
     font-size: 13px;
 }
 
 .div-sobre03 p:nth-child(8) {
     position: absolute;
-    top: 250px;
+    top: 210px;
     font-size: 13px;
 }
 
 .div-sobre03 p:nth-child(9) {
     position: absolute;
-    top: 250px;
-    left: 210px;
+    text-align: justify;
+    top: 210px;
+    left: 200px;
     font-size: 13px;
 }
 
 .div-sobre04 {
     position: absolute;
+    text-align: justify;
     border-top: 3px solid #D4D4D4;
-    top: 725px;
+    top: 680px;
     width: 900px;
     height: 250px;
     left: 325px;
@@ -252,12 +257,13 @@ nav {
     border-top: 3px solid #D4D4D4;
     width: 500px;
     height: 250px;
-    top: 900px;
+    top: 825px;
     left: 325px;
 }
 
 .div-sobre05 p:nth-child(2) {
     position: absolute;
+    text-align: justify;
     top: 50px;
     font-size: 13px;
 }
@@ -280,7 +286,7 @@ nav {
     padding: 22px 22px 22px 22px;
     border-radius: 12px;
     background-color: var(--body-color);
-    top: 900px;
+    top: 825px;
     height: 225px;
     left: 850px;
     width: 375px;
@@ -294,9 +300,10 @@ nav {
 
 .div-curiosidade p {
     position: relative;
+    padding: 12px;
+    text-align: justify;
     font-size: 13px;
-    top: 45px;
-    left: 5px;
+    top: 35px;
 }
 
 

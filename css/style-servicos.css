@@ -219,21 +219,20 @@ nav {
 
 .div-ideia02 img {
     position: relative;
-    top: 50px;
     width: 450px;
     height: auto;
 }
 
 .div-ideia02 h1 {
     position: relative;
-    top: 150px;
+    top: 100px;
     font-size: 22px;
 }
 
 .div-ideia02 p {
     position: relative;
     text-align: justify;
-    top: 175px;
+    top: 125px;
     width: 900px;
     padding: 12px;
     border-radius: 12px;
@@ -247,7 +246,7 @@ nav {
 
 .div-ideia03 img {
     position: relative;
-    right: -100px;
+    right: -75px;
     width: 450px;
     height: auto;
 }
@@ -268,6 +267,24 @@ nav {
     padding: 12px;
     border-radius: 12px;
     background-color: #deeffe;
+}
+
+.div-ideia03 button {
+    position: relative;
+    top: 135px;
+    right: -800px;
+    padding: 12px 12px 12px 12px;
+    color: var(--text-color);
+    background-color: var(--body-color);
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+}
+
+.div-ideia03 button:hover {
+    background-color: var(--second-text-color);
+    transition: background-color 0.3s ease;
 }
 
 /* <!-- FOOTER --> */

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
 :root{
     --body-color: #0262C2;
@@ -14,7 +14,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 /* ------- BODY -------- */
@@ -58,12 +58,10 @@ nav {
     display: flex;
     list-style: none;
     position: absolute;
-    right: 2%;
+    right: 3%;
 }
 
 .nav-list li {
-    font-family: 'Opens Sans', sans-serif;
-    font-size: 15px;
     text-decoration: none;
     color: var(--text-color);
     margin-left: 17px;
@@ -71,48 +69,63 @@ nav {
 }
 
 .nav-link {
-    font-family: 'Opens Sans', sans-serif;
-    font-size: 15px;
+    font-size: 14px;
+    font-weight: 500;
     text-decoration: none;
     color: var(--text-color);
 }
-
 
 /* <!-- SECTION PREÇOS --> */
 .section-precos {
     position: relative;
     background-color: var(--text-color);
     width: 100%;
-    height: 900px;
+    height: 950px;
 }
 
 .div-precos-top {
-    position: absolute;
+    position: relative;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     top: 100px;
-    left: 400px;
 }
 
 .div-precos-top h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 36px;
     font-weight: 400;
 }
 
 .div-precos-top h3 {
-    position: absolute;
+    position: relative;
+    top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 18px;
     font-weight: 400;
-    left: 75px;
+}
+
+.div-main-mensalidade {
+    position: relative;
+    top: 175px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .div-mensalidade {
-    position: absolute;
+    position: relative;
     background-color: var(--text-color);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 33px;
-    width: 180px;
+    width: 225px;
     height: 55px;
-    top: 225px;
-    left: 660px;
 }
 
 .div-mensalidade button:nth-child(2) {
@@ -122,11 +135,14 @@ nav {
 
 .div-mensalidade button {
     position: relative;
+    text-align: center;
+    justify-content: center;
     margin-right: 15px;
-    top: 5px;
+    font-size: 13px;
+    top: 6px;
     left: 15px;
     background-color: var(--second-blue-color);
-    border-radius: 33px;
+    border-radius: 36px;
     padding: 12px;
     color: var(--text-color);
     border: none;
@@ -139,7 +155,7 @@ nav {
 .div-mensalidade p {
     position: absolute;
     top: -2px;
-    left: 140px;
+    left: 175px;
     text-align: center;
     font-size: 14px;
     color: var(--text-color);
@@ -149,23 +165,22 @@ nav {
 }
 
 .div-precos {
-    position: absolute;
-    top: 325px;
-    left: 21%;
-    width: 100%;
-    padding-top: 15px;
+    top: 250px;
+    position: relative;
     display: grid;
-    grid-template-columns: repeat(3, 0.2fr);
-    /* grid-column-gap: 30px;
-    grid-row-gap: 35px;
-    gap: 60px; */
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 0fr);
+    place-items: center;
+    gap: 30px;
+    width: 100%; /* Ajuste conforme necessário */
+    padding: 15px;
 }
 
 .div-precos .plano01,
-.div-precos .plano02,
-.div-precos .plano03 {
-    width: 250px;
-    height: 400px;
+.div-precos .plano02 {
+    width: 400px;
+    height: 500px;
     padding: 20px;
     border-radius: 12px;
     border: 2px solid #ecebec;
@@ -175,9 +190,8 @@ nav {
 .plano02 h4,
 .plano03 h4 {
     position: relative;
-    top: -5px;
-    left: 50px;
     display: flex;
+    top: -5px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -190,20 +204,19 @@ nav {
 }
 
 .plano01,
-.plano02,
-.plano03 {
+.plano02 {
+    position: relative;
+    flex-direction: column;
     transition: box-shadow 0.3s ease;
 }
 
 .plano01:hover,
-.plano02:hover,
-.plano03:hover {
+.plano02:hover {
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .plano01 .h4,
-.plano02 .h4,
-.plano03 .h4 {
+.plano02 .h4{
     position: relative;
     top: 10px;
     font-weight: 500;
@@ -211,26 +224,24 @@ nav {
 }
 
 .plano01 span,
-.plano02 span,
-.plano03 span {
+.plano02 span{
     position: relative;
     top: 10px;
     left: -2px;
 }
 
 .plano01 .precos-p,
-.plano02 .precos-p,
-.plano03 .precos-p {
+.plano02 .precos-p {
     position: relative;
     top: 20px;
-    font-size: 16px;
+    text-align: justify;
+    font-size: 15px;
     font-weight: 300;
     line-height: 20px;
 }
 
 .plano01 ul,
-.plano02 ul,
-.plano03 ul {
+.plano02 ul {
     position: relative;
     top: 50px;
     display: block;
@@ -238,23 +249,21 @@ nav {
 }
 
 .plano01 ul li,
-.plano02 ul li,
-.plano03 ul li {
+.plano02 ul li{
     display: flex;
     margin-bottom: 20px;
 }
 
 .plano01 ul li i,
-.plano02 ul li i,
-.plano03 ul li i {
+.plano02 ul li i {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     font-size: 24px;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     left: -5px;
     padding: 8px;
     border-radius: 50%;
@@ -263,20 +272,25 @@ nav {
 }
 
 .plano01 ul li p,
-.plano02 ul li p,
-.plano03 ul li p {
+.plano02 ul li p{
+    position: relative;
+    top: 5px;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 15px;
+    text-align: center;
 }
 
 .plano01 button,
-.plano02 button,
-.plano03 button {
-    position: relative;
+.plano02 button {
+    position: absolute;
+    left: 10rem;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     width: 100px;
     height: 40px;
-    top: 70px;
-    left: 50px;
     border: none;
     border-radius: 33px;
     cursor: pointer;
@@ -284,8 +298,7 @@ nav {
 }
 
 .plano01 button:hover,
-.plano02 button:hover,
-.plano03 button:hover {
+.plano02 button:hover {
     background-color: var(--body-color);
     color: var(--text-color);
     transition: background-color 0.3s ease;
