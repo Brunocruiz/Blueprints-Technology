@@ -1083,7 +1083,68 @@ footer p, footer a {
 
 /* Para dispositivos móveis */
 @media (max-width: 768px) {
-    
+    .left-home h1 {
+        left: 125px;
+    }
+
+    .left-home img {
+        left: 100px;
+    }
+
+    .left-home .line-home {
+        left: 350px;
+    }
+
+    .qualidades-home ul li span {
+        font-size: 14px;
+    }
+
+    .div-email {
+        left: 125px;
+    }
+
+    .div-gif img {
+        display: none;
+    }
+
+    .div-gif h1 {
+        top: 50px;
+        left: 35%;
+        width: 500px;
+    }
+
+    .section-produtividade img {
+        width: 900px;
+        left: -65px;
+    }
+
+    .div-produtividade h2:nth-child(1) {
+        top: 140px;
+        left: 155px;
+        font-size: 18px;
+    }
+
+    .div-produtividade h2:nth-child(2) {
+        top: 140px;
+        left: 440px;
+        font-size: 18px;
+    }
+
+    .div-produtividade h4 {
+        width: 600px;
+        left: 80px;
+        text-align: justify;
+    }
+
+    .div-produtividade p {
+        position: relative;
+        top: -15px;
+        left: 215px;
+    }
+
+    .div-produtividade button {
+        left: 280px;
+    }
 }
 
 /* Para dispositivos móveis muito pequenos */

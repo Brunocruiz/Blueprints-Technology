@@ -568,3 +568,84 @@ footer p, footer a {
         right: 400px;
     }
 }
+
+/* Para dispositivos móveis */
+@media (max-width: 768px) {
+    .section-ideias {
+        height: 1100px;
+    }
+    
+    .div-info-servicos img {
+        right: 15px;
+    }
+
+    .div-info-servicos h1 {
+        font-size: 20px;
+    }
+
+    .div-info-servicos p {
+        top: 155px;
+        width: 350px;
+        font-size: 14px;
+    }
+
+    .div-info-servicos button {
+        top: 220px;
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .div-curiosidade span {
+        font-size: 14px;
+    }
+
+    .div-curiosidade p {
+        font-size: 14px;
+    }
+
+    .div-ideia01 h1 {
+        left: 50px;
+    }
+
+    .div-ideia01 p {
+        left: 50px;
+        width: 450px;
+        font-size: 14px;
+    }
+
+    .div-ideia01 img {
+        top: 50px;
+        right: -25px;
+    }
+
+    .div-ideia02 img {
+        top: 60px;
+        width: 300px;
+    }
+
+    .div-ideia02 h1 {
+        font-size: 18px;
+        width: 450px;
+    }
+
+    .div-ideia02 p {
+        font-size: 14px;
+        width: 425px;
+    }
+
+    .div-ideia03 h1 {
+        width: 650px;
+        font-size: 18px;
+        left: 55px;
+    }
+
+    .div-ideia03 p {
+        left: 50px;
+        width: 650px;
+        font-size: 14px;
+    }
+
+    .div-ideia03 img {
+        display: none;
+    }
+}

@@ -479,3 +479,16 @@ footer p, footer a {
 .div-termos a:hover {
     color: var(--three-text-color);
 }
+
+
+/* Para dispositivos móveis */
+@media (max-width: 768px) {
+    .section-precos {
+        height: 1500px;
+        background-color: var(--text-color);
+    }
+
+    .div-precos {
+        grid-template-columns: repeat(1, 0fr);
+    }
+}
