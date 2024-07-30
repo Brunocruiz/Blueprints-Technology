@@ -463,3 +463,108 @@ footer p, footer a {
 .div-termos a:hover {
     color: var(--three-text-color);
 }
+
+/* Para tablets em modo paisagem e menores */
+@media (max-width: 1024px) {
+    .section-info-servicos {
+        height: 500px;
+    }
+
+    .div-info-servicos img {
+        width: 400px;
+        right: 50px;
+    }
+
+    .div-info-servicos h1 {
+        font-size: 30px;
+        left: 50px;
+    }
+
+    .div-info-servicos p {
+        top: 170px;
+        left: 50px;
+    }
+
+    .div-info-servicos button {
+        top: 230px;
+        left: 50px;
+    }
+
+    .div-info-servicos i {
+        font-size: 39px;
+        top: 400px;
+    }
+
+    @keyframes scroll {
+        0% {
+            top: 400px;
+            opacity: 1;
+        }
+        50% {
+            top: 415px;
+            opacity: 0.5;
+        }
+        100% {
+            top: 400px;
+            opacity: 1;
+        }
+    }
+
+    .div-curiosidade span {
+        font-size: 16px;
+    }
+
+    .div-curiosidade p {
+        font-size: 15px;
+    }
+
+    .div-ideia01 h1 {
+        left: 100px;
+    }
+
+    .div-ideia01 p {
+        font-size: 16px;
+        left: 100px;
+        width: 500px;
+    }
+
+    .div-ideia01 img {
+        width: 300px;
+        top: 25px;
+        right: -125px;
+    }
+
+    .div-ideia02 img {
+        top: 50px;
+        width: 350px;
+    }
+
+    .div-ideia02 h1 {
+        width: 600px;
+        font-size: 20px;
+    }
+
+    .div-ideia02 p {
+        width: 600px;
+        font-size: 16px;
+    }
+
+    .div-ideia03 h1 {
+        left: 45px;
+        font-size: 20px;
+    }
+
+    .div-ideia03 p {
+        left: 45px;
+    }
+
+    .div-ideia03 button {
+        left: 50px;
+    }
+
+    .div-ideia03 img {
+        width: 400px;
+        top: 300px;
+        right: 400px;
+    }
+}

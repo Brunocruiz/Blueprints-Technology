@@ -820,3 +820,273 @@ footer p, footer a {
 .div-termos a:hover {
     color: var(--three-text-color);
 }
+
+
+/* --------- RESPONSIVE DESIGN --------- */
+
+/* Para tablets em modo paisagem e menores */
+@media (max-width: 1024px) {
+    .left-home, .right-home{
+        height: 500px;
+    }
+
+    .left-home img {
+        position: relative;
+        top: 100px;
+        left: 200px;
+        width: 350px;
+    }
+
+    .left-home h1 {
+        position: relative;
+        left: 260px;
+        font-size: 22px;
+    }
+
+    .left-home .line-home {
+        position: absolute;
+        width: 225px;
+        top: 335px;
+        left: 460px;
+    }
+
+    .qualidades-home ul {
+        position: relative;
+        top: -50px;
+        left: -50px;
+    }
+
+    .qualidades-home ul li span {
+        font-size: 16px;
+    }
+
+    .qualidades-home ul li span i {
+        width: 25px;
+        height: 25px;
+    }
+
+    .div-email {
+        position: relative;
+        top: 140px;
+        left: 250px;
+        width: 500px;
+        height: 40px;
+    }
+
+    .div-email div button {
+        width: 120px;
+        height: 35px;
+        font-size: 11px;
+        top: 2px;
+        left: -5px;
+    }
+
+    /* SECTION OBJETIVOS */
+    .section-slides {
+        height: 650px;
+    }
+
+    .div-gif h1 {
+        font-size: 32px;
+    }
+
+    .div-gif img {
+        position: relative;
+        top: 150px;
+        left: 25px;
+        width: 350px;
+    }
+
+    .div-objetivos .div-objetivo01 {
+        position: absolute;
+        top: 150px;
+        right: 200px;
+    }
+
+    .div-objetivos .div-objetivo01 .objetivo01 {
+        position: absolute;
+        top: 20px;
+        right: 342px;
+    }
+
+    .div-objetivos .div-objetivo02 {
+        position: absolute;
+        top: 320px;
+        right: 200px;
+    }
+
+    .div-objetivos .div-objetivo02 .objetivo02 {
+        position: absolute;
+        top: 20px;
+        right: 345px;
+    }
+
+    .div-objetivos .div-objetivo03 {
+        position: absolute;
+        top: 475px;
+        right: 200px;
+    }
+
+    .div-objetivos .div-objetivo03 .objetivo03 {
+        position: absolute;
+        top: 20px;
+        right: 345px;
+    }
+
+    .div-objetivos .div-objetivo02 p {
+        font-size: 12px;
+    }
+
+    .div-objetivos .div-objetivo01 h3,
+    .div-objetivos .div-objetivo02 h3,
+    .div-objetivos .div-objetivo03 h3 {
+        font-size: 20px;
+    }
+
+    .div-objetivos .div-objetivo01 p,
+    .div-objetivos .div-objetivo03 p {
+        text-align: justify;
+        font-size: 12px;
+    }
+
+    .section-slides .uil.uil-feedback {
+        font-size: 18px;
+        top: 345px;
+        right: 32px;
+    }
+
+    .section-slides .uil.uil-rss {
+        top: 275px;
+        right: 62px;
+        font-size: 20px;
+    }
+
+    .section-slides .uis.uis-check-circle {
+        position: absolute;
+        top: 222px;
+        right: 80px;
+    }
+
+    .line01 {
+        position: absolute;
+        top: 227px;
+        right: 108px;
+        width: 90px
+    }
+
+    .line02 {
+        position: absolute;
+        top: 325px;
+        right: 80px;
+        width: 125px;
+    }
+
+    .line03 {
+        position: absolute;
+        top: 437px;
+        right: 28px;
+        width: 180px;
+        transform: rotate(-45deg);
+    }
+
+    .circle4 {
+        width: 100px;
+        height: 100px;
+    }
+
+    .circle5 {
+        top: 235px;
+        width: 180px;
+        height: 180px;
+    }
+
+    .circle6 {
+        top: 195px;
+        width: 260px;
+        height: 260px;
+    }
+
+    .circle7 {
+        top: 150px;
+        right: -220px;
+        width: 360px;
+        height: 360px;
+    }
+
+    .circle8 {
+        position: absolute;
+        top: 150px;
+        right: 545px;
+    }
+
+    .circle9 {
+        position: absolute;
+        top: 320px;
+        right: 545px;
+    }
+
+    .circle10 {
+        position: absolute;
+        top: 475px;
+        right: 545px;
+    }
+
+    /* SECTION PRODUTIVIDADE */
+    .icone1 i,
+    .icone2 i {
+        display: none;
+    }
+
+    .div-produtividade h2:nth-child(1),
+    .div-produtividade h2:nth-child(2) {
+        width: 350px;
+    }
+
+    .div-produtividade h2:nth-child(1) {
+        position: absolute;
+        top: 150px;
+        left: 200px;
+        font-size: 20px;
+    }
+
+    .div-produtividade h2:nth-child(2) {
+        position: absolute;
+        top: 150px;
+        left: 620px;
+        font-size: 20px;
+    }
+
+    .div-produtividade h4 {
+        top: 440px;
+        left: 155px;
+    }
+
+    .div-produtividade p {
+        top: 485px;
+        left: 355px;
+    }
+
+    .div-produtividade button {
+        top: 525px;
+        left: 425px;
+    }
+
+    .section-produtividade img {
+        position: relative;
+        top: 0;
+        width: 1024px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* Para dispositivos móveis */
+@media (max-width: 768px) {
+    
+}
+
+/* Para dispositivos móveis muito pequenos */
+@media (max-width: 480px) {
+    
+}

@@ -482,3 +482,27 @@ footer p, footer a {
 .div-termos a:hover {
     color: var(--three-text-color);
 }
+
+/* Para tablets em modo paisagem e menores */
+@media (max-width: 1024px) {
+    .div-blueprints h1 {
+        left: 250px;
+    }
+
+    .div-blueprints img {
+        left: 300px;
+    }
+
+    .div-sobre01,
+    .div-sobre02,
+    .div-sobre03,
+    .div-sobre04,
+    .div-sobre05 {
+        left: 65px;
+    }
+
+    .div-curiosidade {
+        left: 600px;
+    }
+
+}
