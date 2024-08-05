@@ -674,7 +674,7 @@ footer p, footer a {
     }
 
     .section-ideias {
-        height: 1550px;
+        height: 1600px;
     }
 
     .div-ideia01 img,
@@ -730,6 +730,6 @@ footer p, footer a {
 
     .div-ideia03 button {
         top: 325px;
-        left: 100px;
+        left: 125px;
     }
 }
