@@ -69,14 +69,14 @@
 
         <div class="div-main-mensalidade">
             <div class="div-mensalidade">
-                <button>Por horas</button>
-                <button>Por projetos</button>
+                <button id="btnHoras">Por horas</button>
+                <button id="btnProjetos">Por projetos</button>
                 <p>-15%</p>
             </div>
         </div>
 
         <div class="div-precos">
-            <div class="plano01">
+            <div id="plano01" class="plano plano-horas">
                 <h4>Horas</h4>
                 <strong class="h4">R$11,00</strong>
                 <span>/hora</span>
@@ -97,10 +97,10 @@
                         <p>Análise de resultados</p>
                     </li>
                 </ul>
-                <button>Agendar</button>
+                <button><a href="https://wa.me/5573981287473?text=Ol%C3%A1,%20estou%20entrando%20em%20contato%20a%20respeito%20dos%20servi%C3%A7os%20da%20Blueprints." target="_blank">Agendar</a></button>
             </div>
 
-            <div class="plano02">
+            <div id="plano02" class="plano plano-horas">
                 <h4>Mensais</h4>
                 <strong class="h4">R$1520,00</strong>
                 <span>/mês</span>
@@ -126,7 +126,75 @@
                         <p>Lançamento e Suporte Contínuo</p>
                     </li>
                 </ul>
-                <button>Agendar</button>
+                <button><a href="https://wa.me/5573981287473?text=Ol%C3%A1,%20estou%20entrando%20em%20contato%20a%20respeito%20dos%20servi%C3%A7os%20da%20Blueprints." target="_blank">Agendar</a></button>
+            </div>
+
+            <div id="plano03" class="plano plano-projetos">
+                <h4>Plano inicial</h4>
+                <strong class="h4">R$1.292,00</strong>
+                <span>/projeto</span>
+                <p class="precos-p">Para o empreendedor que procura tirar sua ideia do papel e fazer acontecer.</p>
+                <ul>
+                    <li>
+                        <i class="uil uil-check-circle"></i>
+                        <p>Planejamento do Projeto</p>
+                    </li>
+
+                    <li>
+                        <i class="uil uil-check-circle"></i>
+                        <p>Design Personalizado</p>
+                    </li>
+
+                    <li>
+                        <i class="uil uil-check-circle"></i>
+                        <p>SEO e Otimização</p>
+                    </li>
+
+                    <li>
+                        <i class="uil uil-check-circle"></i>
+                        <p>Lançamento e Suporte Contínuo</p>
+                    </li>
+
+                    <li>
+                        <i class="uil uil-check-circle"></i>
+                        <p>Manutenção do website</p>
+                    </li>
+                </ul>
+                <button><a href="https://wa.me/5573981287473?text=Ol%C3%A1,%20estou%20entrando%20em%20contato%20a%20respeito%20dos%20servi%C3%A7os%20da%20Blueprints." target="_blank">Agendar</a></button>
+            </div>
+
+            <div id="plano04" class="plano plano-projetos">
+                <h4>Plano Máximo</h4>
+                <strong class="h4">R$1800,00</strong>
+                <span>/projeto</span>
+                <p class="precos-p">Para o empreendedor que procura tirar sua ideia do papel e fazer acontecer.</p>
+                <ul>
+                    <li>
+                        <i class="uil uil-check-circle"></i>
+                        <p>Planejamento do Projeto</p>
+                    </li>
+
+                    <li>
+                        <i class="uil uil-check-circle"></i>
+                        <p>Design Personalizado</p>
+                    </li>
+
+                    <li>
+                        <i class="uil uil-check-circle"></i>
+                        <p>SEO e Otimização</p>
+                    </li>
+
+                    <li>
+                        <i class="uil uil-check-circle"></i>
+                        <p>Lançamento e Suporte Contínuo</p>
+                    </li>
+
+                    <li>
+                        <i class="uil uil-check-circle"></i>
+                        <p>Manutenção do website</p>
+                    </li>
+                </ul>
+                <button><a href="https://wa.me/5573981287473?text=Ol%C3%A1,%20estou%20entrando%20em%20contato%20a%20respeito%20dos%20servi%C3%A7os%20da%20Blueprints." target="_blank">Agendar</a></button>
             </div>
         </div>
      </section>
@@ -169,6 +237,45 @@
         </div>
     </footer> -->
 
-    <script src="../js/script.js"></script>
+    <script>
+        document.getElementById('btnHoras').addEventListener('click', function() {
+            // Remove 'button-active' class from all buttons
+            document.querySelectorAll('.div-mensalidade button').forEach(function(el) {
+                el.classList.remove('button-active');
+            });
+            
+            // Add 'button-active' class to the clicked button
+            this.classList.add('button-active');
+        
+            // Show the hourly plans and hide the project plans
+            document.querySelectorAll('.plano').forEach(function(el) {
+                el.classList.remove('active');
+            });
+            document.querySelectorAll('.plano-horas').forEach(function(el) {
+                el.classList.add('active');
+            });
+        });
+        
+        document.getElementById('btnProjetos').addEventListener('click', function() {
+            // Remove 'button-active' class from all buttons
+            document.querySelectorAll('.div-mensalidade button').forEach(function(el) {
+                el.classList.remove('button-active');
+            });
+            
+            // Add 'button-active' class to the clicked button
+            this.classList.add('button-active');
+        
+            // Show the project plans and hide the hourly plans
+            document.querySelectorAll('.plano').forEach(function(el) {
+                el.classList.remove('active');
+            });
+            document.querySelectorAll('.plano-projetos').forEach(function(el) {
+                el.classList.add('active');
+            });
+        });
+        
+        // Exibir inicialmente os planos por horas e adicionar a classe 'button-active' ao botão 'btnHoras'
+        document.getElementById('btnHoras').click();
+        </script>
 </body>
 </html>

@@ -138,11 +138,6 @@ nav {
     height: 55px;
 }
 
-.div-mensalidade button:nth-child(2) {
-    background-color: var(--text-color);
-    color: var(--second-text-color);
-}
-
 .div-mensalidade button {
     position: relative;
     text-align: center;
@@ -151,10 +146,8 @@ nav {
     font-size: 13px;
     top: 6px;
     left: 15px;
-    background-color: var(--second-blue-color);
     border-radius: 36px;
     padding: 12px;
-    color: var(--text-color);
     border: none;
 }
 
@@ -187,8 +180,10 @@ nav {
     padding: 15px;
 }
 
-.div-precos .plano01,
-.div-precos .plano02 {
+.div-precos #plano01,
+.div-precos #plano02,
+.div-precos #plano03,
+.div-precos #plano04 {
     width: 400px;
     height: 500px;
     padding: 20px;
@@ -196,9 +191,10 @@ nav {
     border: 2px solid #ecebec;
 }
 
-.plano01 h4,
-.plano02 h4,
-.plano03 h4 {
+#plano01 h4,
+#plano02 h4,
+#plano03 h4,
+#plano04 h4 {
     position: relative;
     display: flex;
     top: -5px;
@@ -213,35 +209,45 @@ nav {
     background-color: #bcdffd;
 }
 
-.plano01,
-.plano02 {
+#plano01,
+#plano02,
+#plano03,
+#plano04 {
     position: relative;
     flex-direction: column;
     transition: box-shadow 0.3s ease;
 }
 
-.plano01:hover,
-.plano02:hover {
+#plano01:hover,
+#plano02:hover,
+#plano03:hover,
+#plano04:hover {
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.plano01 .h4,
-.plano02 .h4{
+#plano01 .h4,
+#plano02 .h4,
+#plano03 .h4,
+#plano04 .h4 {
     position: relative;
     top: 10px;
     font-weight: 500;
     font-size: 24px;
 }
 
-.plano01 span,
-.plano02 span{
+#plano01 span,
+#plano02 span,
+#plano03 span,
+#plano04 span {
     position: relative;
     top: 10px;
     left: -2px;
 }
 
-.plano01 .precos-p,
-.plano02 .precos-p {
+#plano01 .precos-p,
+#plano02 .precos-p,
+#plano03 .precos-p,
+#plano04 .precos-p {
     position: relative;
     top: 20px;
     text-align: justify;
@@ -250,22 +256,28 @@ nav {
     line-height: 20px;
 }
 
-.plano01 ul,
-.plano02 ul {
+#plano01 ul,
+#plano02 ul,
+#plano03 ul,
+#plano04 ul {
     position: relative;
     top: 50px;
     display: block;
     list-style: none;
 }
 
-.plano01 ul li,
-.plano02 ul li{
+#plano01 ul li,
+#plano02 ul li,
+#plano03 ul li,
+#plano04 ul li{
     display: flex;
     margin-bottom: 20px;
 }
 
-.plano01 ul li i,
-.plano02 ul li i {
+#plano01 ul li i,
+#plano02 ul li i,
+#plano03 ul li i,
+#plano04 ul li i {
     position: relative;
     display: flex;
     justify-content: center;
@@ -281,8 +293,10 @@ nav {
     background-color: #deeffe;
 }
 
-.plano01 ul li p,
-.plano02 ul li p{
+#plano01 ul li p,
+#plano02 ul li p,
+#plano03 ul li p,
+#plano04 ul li p{
     position: relative;
     top: 5px;
     font-weight: 300;
@@ -290,8 +304,10 @@ nav {
     text-align: center;
 }
 
-.plano01 button,
-.plano02 button {
+#plano01 button,
+#plano02 button,
+#plano03 button,
+#plano04 button {
     position: absolute;
     left: 10rem;
     bottom: 20px;
@@ -307,11 +323,43 @@ nav {
     transition: background-color 0.3s ease;
 }
 
-.plano01 button:hover,
-.plano02 button:hover {
+#plano01 button:hover,
+#plano02 button:hover,
+#plano03 button:hover,
+#plano04 button:hover {
     background-color: var(--body-color);
     color: var(--text-color);
     transition: background-color 0.3s ease;
+}
+
+#plano01 button a,
+#plano02 button a,
+#plano03 button a,
+#plano04 button a {
+    text-decoration: none;
+    color: var(--second-text-color);
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.plano {
+    display: none;
+}
+
+.plano-horas.active,
+.plano-projetos.active {
+    display: block;
+}
+
+.button-active {
+    background-color: var(--body-color);
+    color: var(--text-color);
 }
 
 /* <!-- FOOTER --> */

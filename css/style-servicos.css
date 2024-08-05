@@ -140,6 +140,12 @@ nav {
     cursor: pointer;
 }
 
+.div-info-servicos button a {
+    padding: 12px 12px 12px 12px;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
 .div-info-servicos i {
     position: absolute;
     top: 480px;
@@ -276,24 +282,6 @@ nav {
     padding: 12px;
     border-radius: 12px;
     background-color: #deeffe;
-}
-
-.div-ideia03 button {
-    position: relative;
-    top: 135px;
-    right: -800px;
-    padding: 12px 12px 12px 12px;
-    color: var(--text-color);
-    background-color: var(--body-color);
-    transition: background-color 0.3s ease;
-    cursor: pointer;
-    border-radius: 8px;
-    border: none;
-}
-
-.div-ideia03 button:hover {
-    background-color: var(--second-text-color);
-    transition: background-color 0.3s ease;
 }
 
 /* <!-- FOOTER --> */
@@ -567,10 +555,6 @@ footer p, footer a {
         left: 45px;
     }
 
-    .div-ideia03 button {
-        left: 50px;
-    }
-
     .div-ideia03 img {
         width: 400px;
         top: 300px;
@@ -726,10 +710,5 @@ footer p, footer a {
         top: 300px;
         left: 20px;
         text-align: justify;
-    }
-
-    .div-ideia03 button {
-        top: 325px;
-        left: 125px;
     }
 }

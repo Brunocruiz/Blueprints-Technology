@@ -66,10 +66,12 @@
             <h1>DESENVOLVIMENTO DE SITES PERSONALIZADOS</h1>
             <img src="images/male-model.png" alt="Descrição do GIF">
             <p>Caso ainda não tenha um site para a sua empresa, entre em contato conosco.</p>
-            <div class="div-email">
-                <input type="email" id="email" name="email" placeholder="Digite seu email aqui" required>
-                <div><button>Entrar em contato</button></div>
-            </div>
+            <form id="contact-form" action="mailto:blueprints@outlook.com.br" method="post" enctype="text/plain">
+                <div class="div-email">
+                    <input type="email" id="email" name="email" placeholder="Digite seu email aqui" required>
+                    <div><button type="submit">Entrar em contato</button></div>
+                </div>
+            </form>
             <span class="line-home"></span>
         </div>
         <div class="right-home">
@@ -169,7 +171,7 @@
                 <img src="images/Produtividade.png">
                 <h4>Além de aumentar sua produtividade, os nossos sistes ajudam a melhorar a eficiência do seu trabalho!</h4>
                 <p>Contrate os nossos serviços para sua empresa.</p>
-                <button>Contratar serviço</button>
+                <button  id="contact-button">Contratar serviço</button>
             </div>
             <div class="icone icone1"><i class="uil uil-chart-pie"></i></div>
             <div class="icone icone2"><i class="uil uil-stopwatch-slash"></i></div>

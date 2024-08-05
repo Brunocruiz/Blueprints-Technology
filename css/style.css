@@ -155,12 +155,13 @@ nav {
     font-weight: 500;
     width: 380px;
     position: relative;
+    left: 10px;
     border: none;
     border-radius: 33px;
     outline: none;
-    left: 15px;
     color: var(--three-text-color);
 }
+
 
 .div-email div button {
     position: relative;
