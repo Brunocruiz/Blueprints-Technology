@@ -44,6 +44,11 @@ nav {
     box-shadow: 1 2px 4px rgba(0, 0, 0, 0.11);;
 }
 
+.menu-icon,
+.close-icon {
+    display: none;
+}
+
 .nav-logo{
     position: absolute;
     top: -65px;
@@ -75,6 +80,10 @@ nav {
     color: var(--text-color);
 }
 
+.menu-icon,
+.close-icon {
+    display: none;
+}
 
 /* <!-- SECTION SOBRE OS SISTEMAS --> */
 .section-info-servicos {
@@ -571,81 +580,156 @@ footer p, footer a {
 
 /* Para dispositivos móveis */
 @media (max-width: 768px) {
-    .section-ideias {
-        height: 1100px;
+    .nav-logo img {
+        position: relative;
+        left: 65px;
     }
-    
-    .div-info-servicos img {
-        right: 15px;
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 60%;
+        height: 100%;
+        background-color: #fff;
+        z-index: 1000;
+        padding-top: 75px; /* Ajuste conforme necessário */
+        align-items: center;
+    }
+
+    .nav-list li a {
+        color: #000;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+        position: absolute;
+        color: var(--text-color);
+        right: 10px;
+        z-index: 99;
+    }
+
+    .close-icon {
+        display: block;
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        font-size: 24px;
+        cursor: pointer;
+        z-index: 100;
+    }
+
+    .section-info-servicos {
+        height: 650px;
     }
 
     .div-info-servicos h1 {
-        font-size: 20px;
+        top: 45px;
+        font-size: 24px;
     }
 
     .div-info-servicos p {
-        top: 155px;
+        top: 135px;
+        width: 300px;
+        text-align: justify;
+    }
+
+    .div-info-servicos img {
+        top: 200px;
+        left: 20px;
         width: 350px;
-        font-size: 14px;
     }
 
-    .div-info-servicos button {
-        top: 220px;
-        padding: 10px;
-        font-size: 13px;
+    .div-info-servicos i {
+        top: 550px;
     }
 
-    .div-curiosidade span {
-        font-size: 14px;
+    @keyframes scroll {
+        0% {
+            top: 550px;
+            opacity: 1;
+        }
+        50% {
+            top: 565px;
+            opacity: 0.5;
+        }
+        100% {
+            top: 550px;
+            opacity: 1;
+        }
+    }
+
+    .div-curiosidade {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section-ideias {
+        height: 1550px;
+    }
+
+    .div-ideia01 img,
+    .div-ideia02 img,
+    .div-ideia03 img {
+        display: none;
     }
 
     .div-curiosidade p {
-        font-size: 14px;
+        width: 350px;
+        text-align: justify;
     }
 
     .div-ideia01 h1 {
-        left: 50px;
+        font-size: 26px;
+        width: 350px;
+        left: 25px;
     }
 
     .div-ideia01 p {
-        left: 50px;
-        width: 450px;
-        font-size: 14px;
-    }
-
-    .div-ideia01 img {
-        top: 50px;
-        right: -25px;
-    }
-
-    .div-ideia02 img {
-        top: 60px;
-        width: 300px;
+        width: 350px;
+        left: 20px;
     }
 
     .div-ideia02 h1 {
-        font-size: 18px;
-        width: 450px;
+        font-size: 24px;
+        width: 350px;
+        top: 175px;
+        left: 25px;
     }
 
     .div-ideia02 p {
-        font-size: 14px;
-        width: 425px;
+        width: 350px;
+        top: 200px;
+        left: 20px;
+        text-align: justify;
     }
 
     .div-ideia03 h1 {
-        width: 650px;
-        font-size: 18px;
-        left: 55px;
+        font-size: 24px;
+        width: 350px;
+        top: 275px;
+        left: 25px;
+        text-align: justify;
     }
 
     .div-ideia03 p {
-        left: 50px;
-        width: 650px;
-        font-size: 14px;
+        width: 350px;
+        top: 300px;
+        left: 20px;
+        text-align: justify;
     }
 
-    .div-ideia03 img {
-        display: none;
+    .div-ideia03 button {
+        top: 325px;
+        left: 100px;
     }
 }

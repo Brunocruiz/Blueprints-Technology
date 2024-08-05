@@ -44,6 +44,11 @@ nav {
     box-shadow: 1 2px 4px rgba(0, 0, 0, 0.11);;
 }
 
+.menu-icon,
+.close-icon {
+    display: none;
+}
+
 .nav-logo{
     position: absolute;
     top: -65px;
@@ -73,6 +78,11 @@ nav {
     font-weight: 500;
     text-decoration: none;
     color: var(--text-color);
+}
+
+.menu-icon,
+.close-icon {
+    display: none;
 }
 
 /* <!-- SECTION PREÇOS --> */
@@ -483,12 +493,63 @@ footer p, footer a {
 
 /* Para dispositivos móveis */
 @media (max-width: 768px) {
-    .section-precos {
-        height: 1500px;
-        background-color: var(--text-color);
+    .nav-logo img {
+        position: relative;
+        left: 120px;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 60%;
+        height: 100%;
+        background-color: #fff;
+        z-index: 1000;
+        padding-top: 75px; /* Ajuste conforme necessário */
+        align-items: center;
+    }
+
+    .nav-list li a {
+        color: #000;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+        position: absolute;
+        color: var(--text-color);
+        right: 10px;
+        z-index: 99;
+    }
+
+    .close-icon {
+        display: block;
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        font-size: 24px;
+        cursor: pointer;
+        z-index: 100;
     }
 
     .div-precos {
         grid-template-columns: repeat(1, 0fr);
+    }
+
+    .section-precos {
+        height: 1500px;
+    }
+
+    .div-precos-top h1 {
+        font-size: 32px;
+        text-align: center;
     }
 }
