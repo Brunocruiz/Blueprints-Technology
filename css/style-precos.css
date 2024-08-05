@@ -495,7 +495,7 @@ footer p, footer a {
 @media (max-width: 768px) {
     .nav-logo img {
         position: relative;
-        left: 120px;
+        left: 65px;
     }
 
     .nav-list {
