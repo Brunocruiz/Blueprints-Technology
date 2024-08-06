@@ -238,6 +238,11 @@
     </footer> -->
 
     <script>
+        function toggleMenu() {
+        const navList = document.querySelector('.nav-list');
+        navList.classList.toggle('active');
+        }
+
         document.getElementById('btnHoras').addEventListener('click', function() {
             // Remove 'button-active' class from all buttons
             document.querySelectorAll('.div-mensalidade button').forEach(function(el) {
